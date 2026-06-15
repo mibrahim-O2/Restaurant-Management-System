@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}Reservations — RestaurantMS{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+    <div>
+        <p class="page-title-eyebrow">Management</p>
+        <h2>All Reservations</h2>
+    </div>
+    <a href="{{ url_for('reservation_form') }}" class="btn btn-gold">
+        <i class="bi bi-calendar-plus"></i> New Reservation
+    </a>
+</div>
+
+{% if reservations %}
+
+    <div class="stats-bar mb-4">
+        <div class="stat-chip">
+            <i class="bi bi-calendar2-check" style="color: var(--accent-gold);"></i>
+            Total Reservations <strong>{{ reservations | length }}</strong>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th style="width:56px;">#</th>
+                    <th>Customer</th>
+                    <th>Table</th>
+                    <th>Date</th>
+                    <th style="width:110px;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for res in reservations %}
+                <tr>
+                    <td>
+                        <div class="order-id">{{ res['id'] }}</div>
+                    </td>
+                    <td>
+                        <i class="bi bi-person-circle me-1" style="color: var(--text-muted);"></i>
+                        {{ res['customer_name'] }}
+                    </td>
+                    <td>
+                        <span class="badge badge-table">
+                            Table {{ res['table_number'] }}
+                        </span>
+                    </td>
+                    <td>
+                        <i class="bi bi-calendar3 me-1" style="color: var(--text-muted);"></i>
+                        {{ res['reservation_date'] }}
+                    </td>
+                    <td>
+                        <a href="{{ url_for('cancel_reservation', reservation_id=res['id']) }}"
+                           class="btn btn-sm btn-warning-custom"
+                           onclick="return confirm('Cancel this reservation?')">
+                            <i class="bi bi-x-circle"></i> Cancel
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% else %}
+    <div class="empty-state">
+        <div class="empty-icon"><i class="bi bi-calendar-x"></i></div>
+        <h5>No reservations yet</h5>
+        <p>Table bookings will appear here once made.</p>
+        <a href="{{ url_for('reservation_form') }}" class="btn btn-gold">
+            <i class="bi bi-calendar-plus"></i> Make First Reservation
+        </a>
+    </div>
+{% endif %}
+
+{% endblock %}

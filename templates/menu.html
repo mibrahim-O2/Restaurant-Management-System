@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}Menu — RestaurantMS{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+    <div>
+        <p class="page-title-eyebrow">Dine With Us</p>
+        <h2>Our Menu</h2>
+    </div>
+    <a href="{{ url_for('order_form') }}" class="btn btn-gold">
+        <i class="bi bi-cart3"></i> Place an Order
+    </a>
+</div>
+
+{% if items %}
+
+    {% set categories = items | map(attribute='category') | list | unique | sort %}
+
+    {% for category in categories %}
+    <div class="category-section">
+
+        <div class="category-label">
+            <i class="bi bi-tag"></i>
+            {{ category }}
+        </div>
+
+        <div class="row g-3">
+            {% for item in items %}
+                {% if item['category'] == category %}
+                <div class="col-md-4 col-sm-6">
+                    <div class="card menu-card h-100">
+                        <div class="card-body">
+                            <p class="menu-item-name">{{ item['item_name'] }}</p>
+                            <span class="badge badge-category mb-3">{{ item['category'] }}</span>
+                            <p class="menu-item-price">
+                                <span>Rs.</span>{{ "%.2f" | format(item['price']) }}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{{ url_for('order_form') }}" class="btn btn-sm btn-outline-gold">
+                                <i class="bi bi-cart-plus"></i> Order This
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+    {% endfor %}
+
+{% else %}
+    <div class="alert-custom">
+        <i class="bi bi-info-circle"></i>
+        No menu items found. Run <code>python database.py</code> to seed the menu.
+    </div>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block title %}Place Order — RestaurantMS{% endblock %}
+
+{% block content %}
+
+<div class="form-card">
+    <div class="card">
+
+        <div class="card-header">
+            <h4>
+                <span class="header-icon header-green">
+                    <i class="bi bi-cart3"></i>
+                </span>
+                New Order
+            </h4>
+        </div>
+
+        <div class="card-body">
+            <form action="{{ url_for('place_order') }}" method="POST">
+
+                <div class="mb-4">
+                    <label for="customer_name" class="form-label">
+                        <i class="bi bi-person" style="color: var(--accent-gold);"></i>
+                        Customer Name
+                    </label>
+                    <input type="text"
+                           class="form-control"
+                           id="customer_name"
+                           name="customer_name"
+                           placeholder="Enter customer name"
+                           required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="item_name" class="form-label">
+                        <i class="bi bi-card-list" style="color: var(--accent-gold);"></i>
+                        Select Item
+                    </label>
+                    <select class="form-select" id="item_name" name="item_name" required>
+                        <option value="" disabled selected>Choose a menu item</option>
+                        {% for item in menu_items %}
+                            <option value="{{ item['item_name'] }}">
+                                {{ item['item_name'] }} &mdash; Rs. {{ "%.2f" | format(item['price']) }}
+                                ({{ item['category'] }})
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mb-5">
+                    <label for="quantity" class="form-label">
+                        <i class="bi bi-hash" style="color: var(--accent-gold);"></i>
+                        Quantity
+                    </label>
+                    <input type="number"
+                           class="form-control"
+                           id="quantity"
+                           name="quantity"
+                           min="1"
+                           max="50"
+                           value="1"
+                           required>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-lg w-100">
+                    <i class="bi bi-check-circle"></i> Confirm Order
+                </button>
+
+            </form>
+        </div>
+
+        <div class="card-footer text-center">
+            <a href="{{ url_for('view_orders') }}" class="btn btn-sm btn-outline-gold">
+                <i class="bi bi-receipt"></i> View All Orders
+            </a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
