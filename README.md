@@ -85,7 +85,7 @@ codealpha-restaurant-management-system/
 
 ## Database Design
 
-**File:** `restaurant.db` — auto-created by SQLite on first run.
+**File:** `restaurant.db`  auto-created by SQLite on first run.
 
 ### `menu`
 
@@ -151,7 +151,7 @@ python database.py
 python app.py
 ```
 
-### 6. Open in browser
+### 6. Open browser
 
 ```
 http://127.0.0.1:5000
@@ -255,15 +255,17 @@ Navbar provides access to all sections
 <div align="center">
 
 **Muhammad Ibrahim**
-BS Computer Science — Final Year
+BS Computer Science (Student)
 
 [![LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-ibrahim-o2)
 
 </div>
 
 ---
+## License
 
- 
+This project is developed for internship and educational purposes.
+&copy; 2026 Muhammad Ibrahim. All rights reserved.
 
 <div align="center">
 
