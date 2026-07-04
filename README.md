@@ -264,7 +264,7 @@ BS Computer Science (Student)
 ---
 ## License
 
-This project is developed for internship and educational purposes.
+This project is developed for self learning and educational purposes.
 &copy; 2026 Muhammad Ibrahim. All rights reserved.
 
 <div align="center">
