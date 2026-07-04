@@ -209,6 +209,7 @@ http://127.0.0.1:5000
 ![Reservations List](https://raw.githubusercontent.com/mibrahim-O2/codealpha-restaurant-management-system/main/Screenshots/reservationlist.png)
 
 ---
+<div align="center">
 
 ## How It Works
 
@@ -235,6 +236,7 @@ Navbar provides access to all sections
 │  View all at /reservations · Cancel any     │
 └─────────────────────────────────────────────┘
 ```
+</div>
 
 ---
 
@@ -250,10 +252,11 @@ Navbar provides access to all sections
 
 ---
 
-## Author
+
 
 <div align="center">
 
+## Author
 **Muhammad Ibrahim**
 BS Computer Science (Student)
 
@@ -262,6 +265,8 @@ BS Computer Science (Student)
 </div>
 
 ---
+<div align="center">
+    
 ## License
 
 This project is developed for self learning and educational purposes.
