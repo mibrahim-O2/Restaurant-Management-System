@@ -19,6 +19,26 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:D4AF37,100:0a0a0a&height=2" width="100%"/>
 
+
+## Table of Contents
+
+| Section | Description | Jump |
+|---|---|:---:|
+| Overview | What the project does and its scope | [Go →](#overview) |
+| Features | Everything the system supports | [Go →](#features) |
+| Tech Stack | Languages, frameworks, and tools used | [Go →](#tech-stack) |
+| Folder Structure | Project layout and file organization | [Go →](#folder-structure) |
+| Database Design | Table schemas and relationships | [Go →](#database-design) |
+| Installation | How to run the project locally | [Go →](#installation) |
+| Routes Reference | Available Flask endpoints | [Go →](#routes-reference) |
+| Screenshots | Visual walkthrough of the application | [Go →](#screenshots) |
+| How It Works | End-to-end user flow | [Go →](#how-it-works) |
+| Future Improvements | Planned features and enhancements | [Go →](#future-improvements) |
+| Author | About the developer | [Go →](#author) |
+| License | Usage and rights information | [Go →](#license) |
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:f0d878,100:0a0a0a&height=2" width="100%"/>
+
  
 
  
