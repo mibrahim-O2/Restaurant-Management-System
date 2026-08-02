@@ -1,18 +1,27 @@
 <div align="center">
 
-<!-- BADGES -->
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-3.x-000000?style=for-the-badge&logo=flask&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Jinja2](https://img.shields.io/badge/Jinja2-Templating-B41717?style=for-the-badge&logo=jinja&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Complete-gold?style=for-the-badge)
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0a0a,50:D4AF37,100:0a0a0a&height=200&section=header&text=RestaurantMS&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Restaurant%20Management%20System&descAlignY=58&descSize=17&descColor=f0d878"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=1000&color=D4AF37&center=true&vCenter=true&width=550&lines=Menu+%C2%B7+Orders+%C2%B7+Table+Reservations" alt="Typing SVG"/>
+
 <br/>
 
-# RestaurantMS
-<br/> 
+<img src="https://img.shields.io/badge/Python-3.x-D4AF37?style=for-the-badge&logo=python&logoColor=0a0a0a&labelColor=0a0a0a">
+<img src="https://img.shields.io/badge/Flask-3.x-D4AF37?style=for-the-badge&logo=flask&logoColor=0a0a0a&labelColor=0a0a0a">
+<img src="https://img.shields.io/badge/SQLite-Database-D4AF37?style=for-the-badge&logo=sqlite&logoColor=0a0a0a&labelColor=0a0a0a">
+<img src="https://img.shields.io/badge/Bootstrap-5.3-D4AF37?style=for-the-badge&logo=bootstrap&logoColor=0a0a0a&labelColor=0a0a0a">
+<img src="https://img.shields.io/badge/Jinja2-Templating-D4AF37?style=for-the-badge&logo=jinja&logoColor=0a0a0a&labelColor=0a0a0a">
+<br/>
+<img src="https://img.shields.io/badge/License-MIT-f0d878?style=for-the-badge&labelColor=0a0a0a">
+<img src="https://img.shields.io/badge/Status-Complete-f0d878?style=for-the-badge&labelColor=0a0a0a">
+
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:D4AF37,100:0a0a0a&height=2" width="100%"/>
+
+ 
+
+ 
 
 ## Overview
 A web-based Restaurant Management System built using Python and Flask with an SQLite database on the backend and Bootstrap 5 on the frontend.The system covers three things: browsing the menu, placing and managing customer orders, and handling table reservations. The scope is focused and the code is straightforward *NO* login system, *NO* payment flow, just clean backend logic that works.
