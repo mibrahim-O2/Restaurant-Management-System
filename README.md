@@ -19,6 +19,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:D4AF37,100:0a0a0a&height=2" width="100%"/>
 
+<div align="center">
 
 ## Table of Contents
 
@@ -46,6 +47,8 @@ A web-based Restaurant Management System built using Python and Flask with an SQ
 Built as a hands-on project to practice connecting Flask routes to a real database, handling form submissions, and structuring a multi page web app from scratch.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:D4AF37,100:0a0a0a&height=2" width="100%"/>
+
+<div align="center">
 
 ## Features
 
@@ -81,6 +84,8 @@ Built as a hands-on project to practice connecting Flask routes to a real databa
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:D4AF37,100:0a0a0a&height=2" width="100%"/>
 
 ## Folder Structure
+
+</div>
 
 ```bash
 codealpha-restaurant-management-system/
