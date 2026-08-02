@@ -42,6 +42,8 @@
 
 ## Overview
 
+</div>
+
 A web-based Restaurant Management System built using Python and Flask with an SQLite database on the backend and Bootstrap 5 on the frontend. The system covers three things: browsing the menu, placing and managing customer orders, and handling table reservations. The scope is focused and the code is straightforward — *NO* login system, *NO* payment flow, just clean backend logic that works.
 
 Built as a hands-on project to practice connecting Flask routes to a real database, handling form submissions, and structuring a multi page web app from scratch.
