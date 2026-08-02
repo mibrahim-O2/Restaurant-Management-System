@@ -248,9 +248,10 @@ http://127.0.0.1:5000
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:f0d878,100:0a0a0a&height=2" width="100%"/>
 
+<div align="center">
+
 ## How It Works
 
-<div align="center">
 
 ```
 User opens the app
@@ -280,6 +281,7 @@ Navbar provides access to all sections
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:D4AF37,100:0a0a0a&height=2" width="100%"/>
 
+
 ## Future Improvements
 
 - User authentication and staff login system
@@ -291,6 +293,8 @@ Navbar provides access to all sections
 - Admin dashboard with analytics
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0a,50:f0d878,100:0a0a0a&height=2" width="100%"/>
+
+<div align="center">
 
 ## Author
 
